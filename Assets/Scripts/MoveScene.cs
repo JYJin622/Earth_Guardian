@@ -6,18 +6,20 @@ using UnityEngine.SceneManagement;
 public class MoveScene : MonoBehaviour
 {
     public string transferMapName;
+    public AudioSource aud;
     public int fadeTime = 0;
     // Start is called before the first frame update
     public void LoadScene()
     {
-        if(fadeTime != 0)
+        aud.Play();
+        if (fadeTime != 0)
         {
             FadeObject obj = FindObjectOfType<FadeObject>();
             obj.FadeIn(fadeTime);
             Invoke("Load", fadeTime);
         }
         else
-            SceneManager.LoadScene(transferMapName);
+            Invoke("Load", 0.5f);
     }
 
     public void Start()

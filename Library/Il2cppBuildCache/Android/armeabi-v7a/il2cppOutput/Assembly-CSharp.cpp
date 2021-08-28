@@ -5094,8 +5094,10 @@ struct MoveScene_tA343A7E142E60168B201B9D022843E5FFC316CB7  : public MonoBehavio
 public:
 	// System.String MoveScene::transferMapName
 	String_t* ___transferMapName_4;
+	// UnityEngine.AudioSource MoveScene::aud
+	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___aud_5;
 	// System.Int32 MoveScene::fadeTime
-	int32_t ___fadeTime_5;
+	int32_t ___fadeTime_6;
 
 public:
 	inline static int32_t get_offset_of_transferMapName_4() { return static_cast<int32_t>(offsetof(MoveScene_tA343A7E142E60168B201B9D022843E5FFC316CB7, ___transferMapName_4)); }
@@ -5107,12 +5109,21 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___transferMapName_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_fadeTime_5() { return static_cast<int32_t>(offsetof(MoveScene_tA343A7E142E60168B201B9D022843E5FFC316CB7, ___fadeTime_5)); }
-	inline int32_t get_fadeTime_5() const { return ___fadeTime_5; }
-	inline int32_t* get_address_of_fadeTime_5() { return &___fadeTime_5; }
-	inline void set_fadeTime_5(int32_t value)
+	inline static int32_t get_offset_of_aud_5() { return static_cast<int32_t>(offsetof(MoveScene_tA343A7E142E60168B201B9D022843E5FFC316CB7, ___aud_5)); }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_aud_5() const { return ___aud_5; }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_aud_5() { return &___aud_5; }
+	inline void set_aud_5(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
 	{
-		___fadeTime_5 = value;
+		___aud_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___aud_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_fadeTime_6() { return static_cast<int32_t>(offsetof(MoveScene_tA343A7E142E60168B201B9D022843E5FFC316CB7, ___fadeTime_6)); }
+	inline int32_t get_fadeTime_6() const { return ___fadeTime_6; }
+	inline int32_t* get_address_of_fadeTime_6() { return &___fadeTime_6; }
+	inline void set_fadeTime_6(int32_t value)
+	{
+		___fadeTime_6 = value;
 	}
 };
 
@@ -11663,40 +11674,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveScene_LoadScene_mC149E29DBFABA521AAF
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindObjectOfType_TisFadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C_m3A27B80C7328FDBDA60372D8BC8EEA55376018AE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6A719B16F03E18E6ED7CE19A6F58C0FEF4C3D978);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if(fadeTime != 0)
-		int32_t L_0 = __this->get_fadeTime_5();
-		if (!L_0)
+		// aud.Play();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_aud_5();
+		NullCheck(L_0);
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
+		// if (fadeTime != 0)
+		int32_t L_1 = __this->get_fadeTime_6();
+		if (!L_1)
 		{
-			goto IL_002d;
+			goto IL_0038;
 		}
 	}
 	{
 		// FadeObject obj = FindObjectOfType<FadeObject>();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		FadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C * L_1;
-		L_1 = Object_FindObjectOfType_TisFadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C_m3A27B80C7328FDBDA60372D8BC8EEA55376018AE(/*hidden argument*/Object_FindObjectOfType_TisFadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C_m3A27B80C7328FDBDA60372D8BC8EEA55376018AE_RuntimeMethod_var);
+		FadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C * L_2;
+		L_2 = Object_FindObjectOfType_TisFadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C_m3A27B80C7328FDBDA60372D8BC8EEA55376018AE(/*hidden argument*/Object_FindObjectOfType_TisFadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C_m3A27B80C7328FDBDA60372D8BC8EEA55376018AE_RuntimeMethod_var);
 		// obj.FadeIn(fadeTime);
-		int32_t L_2 = __this->get_fadeTime_5();
-		NullCheck(L_1);
-		FadeObject_FadeIn_m1CD21906CD7AA96334BC30BD07302CA780E1E15A(L_1, ((float)((float)L_2)), (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)NULL, /*hidden argument*/NULL);
+		int32_t L_3 = __this->get_fadeTime_6();
+		NullCheck(L_2);
+		FadeObject_FadeIn_m1CD21906CD7AA96334BC30BD07302CA780E1E15A(L_2, ((float)((float)L_3)), (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)NULL, /*hidden argument*/NULL);
 		// Invoke("Load", fadeTime);
-		int32_t L_3 = __this->get_fadeTime_5();
-		MonoBehaviour_Invoke_m4AAB759653B1C6FB0653527F4DDC72D1E9162CC4(__this, _stringLiteral6A719B16F03E18E6ED7CE19A6F58C0FEF4C3D978, ((float)((float)L_3)), /*hidden argument*/NULL);
+		int32_t L_4 = __this->get_fadeTime_6();
+		MonoBehaviour_Invoke_m4AAB759653B1C6FB0653527F4DDC72D1E9162CC4(__this, _stringLiteral6A719B16F03E18E6ED7CE19A6F58C0FEF4C3D978, ((float)((float)L_4)), /*hidden argument*/NULL);
 		// }
 		return;
 	}
 
-IL_002d:
+IL_0038:
 	{
-		// SceneManager.LoadScene(transferMapName);
-		String_t* L_4 = __this->get_transferMapName_4();
-		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m7DAF30213E99396ECBDB1BD40CC34CCF36902092(L_4, /*hidden argument*/NULL);
+		// Invoke("Load", 0.5f);
+		MonoBehaviour_Invoke_m4AAB759653B1C6FB0653527F4DDC72D1E9162CC4(__this, _stringLiteral6A719B16F03E18E6ED7CE19A6F58C0FEF4C3D978, (0.5f), /*hidden argument*/NULL);
 		// }
 		return;
 	}
