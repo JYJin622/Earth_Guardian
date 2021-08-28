@@ -1603,7 +1603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: MainCharacter
-  speed: 2.5
+  speed: 4
   walkCount: 8
   boxCollider: {fileID: 1096816884}
   layerMask:

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0B817BFD-2A49-BA4F-12C3-A01C6D4B2E89}</ProjectGuid>
+    <ProjectGuid>{27601B7B-ADC0-428F-559A-831B087EA077}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,27 +62,32 @@
     <Compile Include="Assets\Scripts\TestScript.cs" />
     <Compile Include="Assets\Scripts\EventSystemStatic.cs" />
     <Compile Include="Assets\Scripts\FadeObject.cs" />
+    <Compile Include="Assets\Scripts\Info_main.cs" />
     <Compile Include="Assets\Scripts\BGMManager.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\checkGameData.cs" />
     <Compile Include="Assets\Scripts\UIButtonManager.cs" />
     <Compile Include="Assets\Scripts\MoveScene.cs" />
     <Compile Include="Assets\Scripts\DataManage.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\KeysStatic.cs" />
+    <Compile Include="Assets\Scripts\Quest_Main2.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\SendMessage.cs" />
     <Compile Include="Assets\Scripts\FadeText.cs" />
     <Compile Include="Assets\Scripts\Choice.cs" />
     <Compile Include="Assets\Scripts\OnPressed.cs" />
     <Compile Include="Assets\Scripts\ChoiceManager.cs" />
+    <Compile Include="Assets\Scripts\checkRoundClear.cs" />
     <Compile Include="Assets\Scripts\Bound.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\OrderManager.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\TransferScene.cs" />
     <Compile Include="Assets\Scripts\Quest_Main1.cs" />
+    <Compile Include="Assets\Scripts\theEnd.cs" />
     <Compile Include="Assets\Scripts\UICameraStatic.cs" />
     <Compile Include="Assets\Scripts\StartPoint.cs" />
     <Compile Include="Assets\Scripts\NPCManager.cs" />
@@ -91,14 +96,9 @@
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\GameData.cs" />
+    <Compile Include="Assets\Scripts\EndingCredit.cs" />
     <Compile Include="Assets\Scripts\TransferMap.cs" />
     <Compile Include="Assets\Scripts\ManagerStatic.cs" />
-    <Compile Include="Assets\Scripts\Quest_Main2.cs" />
-    <Compile Include="Assets\Scripts\Info_main.cs" />
-    <Compile Include="Assets\Scripts\EndingCredit.cs" />
-    <Compile Include="Assets\Scripts\theEnd.cs" />
-    <Compile Include="Assets\Scripts\checkRoundClear.cs" />
-    <Compile Include="Assets\Scripts\checkGameData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
