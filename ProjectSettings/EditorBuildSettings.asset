@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 3ec967b5ea8c7574ea3d37f46e38c150
+  - enabled: 1
+    path: Assets/Scenes/Story01.unity
+    guid: a68906853a025f84684aee1845c4a45d
+  - enabled: 1
+    path: Assets/Scenes/Story02.unity
+    guid: 85f92d5c157a4b3439ceb731b3b0990f
+  - enabled: 1
+    path: Assets/Scenes/Story03.unity
+    guid: b42a0e6d11dcea64dbb92ddb8ef1db8b
+  - enabled: 1
+    path: Assets/Scenes/Story04.unity
+    guid: 1734c4c417045d548a453f685eafef5a
+  - enabled: 1
+    path: Assets/Scenes/Story05.unity
+    guid: 2db151c1f7ee4bf4e9050e6f1745e20f
+  - enabled: 1
+    path: Assets/Scenes/Story06.unity
+    guid: 60c59d15f39a7b6498ebd053345f2334
+  - enabled: 1
+    path: Assets/Scenes/M-1.unity
+    guid: 7415ed567cb7c734f8c59e14b685c2dc
+  - enabled: 1
+    path: Assets/Scenes/M-2.unity
+    guid: 5d87358a2144b1642a96febc982ad4e6
+  - enabled: 1
+    path: Assets/Scenes/M-3.unity
+    guid: 36db11367ff74664eac7f0982107c05f
+  - enabled: 1
+    path: Assets/Scenes/Q-1.unity
+    guid: aedef4322bbbae046b7af3fc2a029cf6
+  - enabled: 1
+    path: Assets/Scenes/Q-2.unity
+    guid: 90d1f3f3735ce44449059493b7767504
+  - enabled: 1
+    path: Assets/Scenes/Q-3.unity
+    guid: 6b50f0eee55fb2a4890e80e1af6da4a2
+  - enabled: 1
+    path: Assets/Scenes/Q-4.unity
+    guid: c7b9269d5eefdfd4b86f4aed182430cb
+  - enabled: 1
+    path: Assets/Scenes/GameSave.unity
+    guid: 16f45d6b82db4784a844f4bd6e5e401c
+  - enabled: 1
+    path: Assets/Scenes/Quest1.unity
+    guid: 1ef7ccdc9788dbc4ba4092f33627faf4
+  - enabled: 1
+    path: Assets/Scenes/Prov_Info.unity
+    guid: 81af4a1033a683c46a63fb108d25ce6c
+  - enabled: 1
+    path: Assets/Scenes/Prov_Info2.unity
+    guid: b6829da2c2e6bfc478c67c011f9f8d5c
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: c3c984fa3a372d54ca396e2002939d38
+  - enabled: 1
+    path: Assets/Scenes/the_end.unity
+    guid: 4da51a8702006ef41b0fc939d22fc144
+  m_configObjects: {}
