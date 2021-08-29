@@ -24,16 +24,15 @@ public class Quest_Main2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!LocalDBManager.Instance.isQuestCleared(2))
+        thePlayer = FindObjectOfType<PlayerManager>();
+        if (!LocalDBManager.Instance.isQuestCleared(2) && thePlayer.beforeMapName == "Prov_Info2")
         {
             isAble = true;
+            thePlayer.questMode = true;
+            theInfo.Load();
+            selection.ShowChoice(choices[0]);
         }
         else selection = null;
-        thePlayer = FindObjectOfType<PlayerManager>();
-        thePlayer.questMode = true;
-        count = 0;
-        if (isAble)
-            selection.ShowChoice(choices[0]);
     }
 
     public bool isOpenedDialog()

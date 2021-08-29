@@ -83,7 +83,6 @@ public class LocalDBManager : MonoBehaviour
         {
             _gameData.stage_2 = true;
         }
-        SaveGameData();
     }
 
     public bool isQuestCleared(int round)

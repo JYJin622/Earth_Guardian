@@ -1841,7 +1841,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: 7e8153bc1f465832468bb71a25ae7ca1
+      Hash: 7805dbebd103341782f3d6071ec8690f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: checkRoundClear

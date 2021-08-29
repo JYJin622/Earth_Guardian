@@ -2234,7 +2234,7 @@ MonoBehaviour:
     - Turn off the light when you go out.
     - Recycle properly.
     - Turn on the water even if you are not using it.
-  - question: 2. Which is CRITICAL to our environment?
+  - question: 2. Which is NOT critical to our environment?
     answers:
     - Carbon
     - CO2

@@ -24,16 +24,16 @@ public class Quest_Main1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!LocalDBManager.Instance.isQuestCleared(1))
+        thePlayer = FindObjectOfType<PlayerManager>();
+        if (!LocalDBManager.Instance.isQuestCleared(1) && thePlayer.beforeMapName == "Prov_Info")
         {
             isAble = true;
-        }
-        thePlayer = FindObjectOfType<PlayerManager>();
-        thePlayer.questMode = true;
-        theInfo.Load();
-        count = 0;
-        if (isAble)
+            thePlayer.questMode = true;
+            theInfo.Load();
+            count = 0;
             selection.ShowChoice(choices[0]);
+        }
+        else selection = null;
     }
     public bool isOpenedDialog()
     {
@@ -45,7 +45,7 @@ public class Quest_Main1 : MonoBehaviour
         thePlayer.questMode = false;
         thePlayer.currentMapName = "M-2";
         thePlayer.beforeMapName = "Q-1";
-        count = 0; correctState = 0;
+        correctState = 0;
         theInfo.Disappear();
         //Object.Destroy(quest.theInfo);
         SceneManager.LoadScene("M-2");
