@@ -18351,7 +18351,7 @@ IL_00ca:
 				StreamReader_tA857ACC7ABF9AA4638E1291E6D2539C14D2963D3 * L_43 = V_2;
 				NullCheck(L_43);
 				String_t* L_44;
-				L_44 = VirtualFuncInvoker0< String_t* >::Invoke(12 /* System.String System.IO.TextReader::ReadLine() */, L_43);
+				L_44 = VirtualFuncInvoker0< String_t* >::Invoke(13 /* System.String System.IO.TextReader::ReadLine() */, L_43);
 				String_t* L_45 = L_44;
 				V_3 = L_45;
 				if (L_45)
@@ -25431,7 +25431,7 @@ IL_0007:
 		StreamReader_tA857ACC7ABF9AA4638E1291E6D2539C14D2963D3 * L_2 = V_0;
 		NullCheck(L_2);
 		String_t* L_3;
-		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(11 /* System.String System.IO.TextReader::ReadToEnd() */, L_2);
+		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(12 /* System.String System.IO.TextReader::ReadToEnd() */, L_2);
 		V_1 = L_3;
 		IL2CPP_LEAVE(0x1A, FINALLY_0010);
 	}// end try (depth: 1)
@@ -25521,7 +25521,7 @@ IL_0009:
 		StreamWriter_t3E267B7F3C9522AF936C26ABF158398BB779FAF6 * L_3 = V_0;
 		String_t* L_4 = ___contents1;
 		NullCheck(L_3);
-		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void System.IO.TextWriter::Write(System.String) */, L_3, L_4);
+		VirtualActionInvoker1< String_t* >::Invoke(14 /* System.Void System.IO.TextWriter::Write(System.String) */, L_3, L_4);
 		IL2CPP_LEAVE(0x1C, FINALLY_0012);
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)

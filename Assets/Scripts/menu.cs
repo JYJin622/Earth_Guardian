@@ -35,7 +35,7 @@ public class menu : MonoBehaviour{
 
     private void OnApplicationQuit()
     {
-        //System.Diagnostics.Process.GetCurrentProcess().Kill();
+        System.Diagnostics.Process.GetCurrentProcess().Kill();
     }
 
     public void Continue()

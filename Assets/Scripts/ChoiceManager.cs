@@ -50,7 +50,7 @@ public class ChoiceManager : MonoBehaviour
     PlayerManager playerScript;
 
     Quest_Main1 qs1;
-    Quest_Main1 qs2;
+    Quest_Main2 qs2;
 
 
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
@@ -68,6 +68,8 @@ public class ChoiceManager : MonoBehaviour
             answer_Panel[i].SetActive(false);
         }
         question_Text.text = "";
+        qs1 = FindObjectOfType<Quest_Main1>();
+        qs2 = FindObjectOfType<Quest_Main2>();
     }
 
     public void ShowChoice(Choice _choice)

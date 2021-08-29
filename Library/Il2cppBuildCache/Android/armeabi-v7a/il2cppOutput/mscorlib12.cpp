@@ -8634,6 +8634,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Stream_t5DC87DD578C2C5298D98E7802E92DEABB66E2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_GetFileName_m4CCFEEE8CA42DE16FCAF05D765EFB88E7086744A (String_t* ___path0, const RuntimeMethod* method);
 // System.Void System.IO.FileStream::.ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions,System.String,System.Boolean,System.Boolean,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileStream__ctor_mA8AB9BCEDDF972CF5DB44B2F2B92F4157C0FE05C (FileStream_t6342275F1C1E26F5EEB5AD510933C95B78A5DA26 * __this, String_t* ___path0, int32_t ___mode1, int32_t ___access2, int32_t ___share3, int32_t ___bufferSize4, int32_t ___options5, String_t* ___msgPath6, bool ___bFromProxy7, bool ___useLongPath8, bool ___checkHost9, const RuntimeMethod* method);
+// System.Void System.GC::SuppressFinalize(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_SuppressFinalize_mEE880E988C6AF32AA2F67F2D62715281EAA41555 (RuntimeObject * ___obj0, const RuntimeMethod* method);
 // System.Boolean System.IO.StreamWriter::get_LeaveOpen()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StreamWriter_get_LeaveOpen_m896DC0D626C28A975E908EC06C4DB9767636CF9C (StreamWriter_t3E267B7F3C9522AF936C26ABF158398BB779FAF6 * __this, const RuntimeMethod* method);
 // System.Void System.IO.StreamWriter::CheckAsyncTaskInProgress()
@@ -9257,8 +9259,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ExecutionContext_t16AC73BB21FEEEA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ExecutionContext_get_IsPreAllocatedDefault_m0A1AE682465E87C42C4610E8134F94C73FD4C48C (ExecutionContext_t16AC73BB21FEEEAD34A017877AC18DD8BB836414 * __this, const RuntimeMethod* method);
 // System.Threading.ExecutionContext System.Threading.ExecutionContext::CreateCopy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ExecutionContext_t16AC73BB21FEEEAD34A017877AC18DD8BB836414 * ExecutionContext_CreateCopy_m8391D5DF2C4C2CDA58356184B0CC2AE3C7D51F73 (ExecutionContext_t16AC73BB21FEEEAD34A017877AC18DD8BB836414 * __this, const RuntimeMethod* method);
-// System.Void System.GC::SuppressFinalize(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_SuppressFinalize_mEE880E988C6AF32AA2F67F2D62715281EAA41555 (RuntimeObject * ___obj0, const RuntimeMethod* method);
 // System.Boolean System.Threading.ManualResetEventSlim::get_IsSet()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualResetEventSlim_get_IsSet_mC7072CBE0F9ADD761909691D21A500F4ACF78D7D (ManualResetEventSlim_tDEDF52539E364C425BA581F3AAF42843AFAD366E * __this, const RuntimeMethod* method);
 // System.Boolean System.Threading.Tasks.Task::MarkStarted()
@@ -10012,6 +10012,22 @@ IL_0007:
 		FileStream_t6342275F1C1E26F5EEB5AD510933C95B78A5DA26 * L_6 = (FileStream_t6342275F1C1E26F5EEB5AD510933C95B78A5DA26 *)il2cpp_codegen_object_new(FileStream_t6342275F1C1E26F5EEB5AD510933C95B78A5DA26_il2cpp_TypeInfo_var);
 		FileStream__ctor_mA8AB9BCEDDF972CF5DB44B2F2B92F4157C0FE05C(L_6, L_1, L_2, 2, 1, ((int32_t)4096), ((int32_t)134217728), L_4, (bool)0, (bool)0, L_5, /*hidden argument*/NULL);
 		return L_6;
+	}
+}
+// System.Void System.IO.StreamWriter::Close()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter_Close_mA56B60A229DC995C99C04B1D6F8C02499AB5C981 (StreamWriter_t3E267B7F3C9522AF936C26ABF158398BB779FAF6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GC_tD6F0377620BF01385965FD29272CF088A4309C0D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		VirtualActionInvoker1< bool >::Invoke(9 /* System.Void System.IO.TextWriter::Dispose(System.Boolean) */, __this, (bool)1);
+		IL2CPP_RUNTIME_CLASS_INIT(GC_tD6F0377620BF01385965FD29272CF088A4309C0D_il2cpp_TypeInfo_var);
+		GC_SuppressFinalize_mEE880E988C6AF32AA2F67F2D62715281EAA41555(__this, /*hidden argument*/NULL);
+		return;
 	}
 }
 // System.Void System.IO.StreamWriter::Dispose(System.Boolean)
@@ -28412,6 +28428,14 @@ IL_0028:
 	{
 		NullCheck(G_B5_1);
 		G_B5_1->set__length_6(G_B5_0);
+		return;
+	}
+}
+// System.Void System.IO.StringReader::Close()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringReader_Close_m54DF3025D578B03683530B3FA3D36A136A8BC877 (StringReader_t74E352C280EAC22C878867444978741F19E1F895 * __this, const RuntimeMethod* method)
+{
+	{
+		VirtualActionInvoker1< bool >::Invoke(8 /* System.Void System.IO.TextReader::Dispose(System.Boolean) */, __this, (bool)1);
 		return;
 	}
 }

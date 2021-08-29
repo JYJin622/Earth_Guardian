@@ -23256,7 +23256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SmallXmlParser_Peek_mF781F322E3AD452C
 		TextReader_t25B06DCA1906FEAD02150DB14313EBEA4CD78D2F * L_0 = __this->get_reader_1();
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.IO.TextReader::Peek() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.IO.TextReader::Peek() */, L_0);
 		return L_1;
 	}
 }
@@ -23271,7 +23271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SmallXmlParser_Read_m170F3C7417523CB6
 		TextReader_t25B06DCA1906FEAD02150DB14313EBEA4CD78D2F * L_0 = __this->get_reader_1();
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.IO.TextReader::Read() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.IO.TextReader::Read() */, L_0);
 		int32_t L_2 = L_1;
 		G_B1_0 = L_2;
 		if ((!(((uint32_t)L_2) == ((uint32_t)((int32_t)10)))))
@@ -33901,6 +33901,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamReader_Init_mAF69C805991FE3F8321F3
 		return;
 	}
 }
+// System.Void System.IO.StreamReader::Close()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamReader_Close_mE8AEB72C18DCB4860A0AF067017F0E0EE51D76D4 (StreamReader_tA857ACC7ABF9AA4638E1291E6D2539C14D2963D3 * __this, const RuntimeMethod* method)
+{
+	{
+		VirtualActionInvoker1< bool >::Invoke(8 /* System.Void System.IO.TextReader::Dispose(System.Boolean) */, __this, (bool)1);
+		return;
+	}
+}
 // System.Void System.IO.StreamReader::Dispose(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamReader_Dispose_mFBB4BDEB3EB4F349602F8261A79784412BC0C22F (StreamReader_tA857ACC7ABF9AA4638E1291E6D2539C14D2963D3 * __this, bool ___disposing0, const RuntimeMethod* method)
 {
@@ -34037,7 +34045,7 @@ IL_000d:
 	}
 	{
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
 		if (L_4)
 		{
 			goto IL_0033;
@@ -34094,7 +34102,7 @@ IL_000d:
 	}
 	{
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
 		if (L_3)
 		{
 			goto IL_002b;
@@ -34358,7 +34366,7 @@ IL_0026:
 		int32_t L_10 = __this->get_charLen_12();
 		__this->set_charPos_11(L_10);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
 		int32_t L_12 = __this->get_charLen_12();
 		if ((((int32_t)L_12) > ((int32_t)0)))
 		{
@@ -35206,7 +35214,7 @@ IL_000d:
 	}
 	{
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
 		if (L_3)
 		{
 			goto IL_002b;
@@ -35305,7 +35313,7 @@ IL_008b:
 	}
 	{
 		int32_t L_29;
-		L_29 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
+		L_29 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
 		if ((((int32_t)L_29) <= ((int32_t)0)))
 		{
 			goto IL_00cf;
@@ -35373,7 +35381,7 @@ IL_00fc:
 		StringBuilder_t * L_48;
 		L_48 = StringBuilder_Append_m4B771D7BFE8A65C9A504EC5847A699EB678B02DB(L_44, L_45, L_46, L_47, /*hidden argument*/NULL);
 		int32_t L_49;
-		L_49 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
+		L_49 = VirtualFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
 		if ((((int32_t)L_49) > ((int32_t)0)))
 		{
 			goto IL_002d;
