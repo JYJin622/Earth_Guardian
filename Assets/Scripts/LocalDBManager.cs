@@ -75,7 +75,6 @@ public class LocalDBManager : MonoBehaviour
     
     public void QuestClear(int round)
     {
-        LoadGameData();
         if(round == 1)
         {
             _gameData.stage_1 = true;
@@ -92,7 +91,6 @@ public class LocalDBManager : MonoBehaviour
         if (_gameData == null)
         {
             LoadGameData();
-            SaveGameData();
         }
         if (round == 1)
         {
@@ -113,6 +111,7 @@ public class LocalDBManager : MonoBehaviour
         _gameData.stage_2 = false;
         _gameData.BGMSound = 0;
         _gameData.EffectSound = 0;
+        SaveGameData();
     }
 
     public bool returnIsSaved()
@@ -125,7 +124,7 @@ public class LocalDBManager : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        SaveGameData();
+        
     }
     // Start is called before the first frame update
     void Start()

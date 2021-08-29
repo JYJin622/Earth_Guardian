@@ -33,6 +33,11 @@ public class menu : MonoBehaviour{
         Application.Quit();
     }
 
+    private void OnApplicationQuit()
+    {
+        //System.Diagnostics.Process.GetCurrentProcess().Kill();
+    }
+
     public void Continue()
     {
         activated = false;

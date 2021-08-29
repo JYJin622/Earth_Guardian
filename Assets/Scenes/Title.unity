@@ -843,6 +843,10 @@ MonoBehaviour:
   - eventID: 2
     callback:
       m_PersistentCalls:
+        m_Calls: []
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 85338617}
           m_TargetAssemblyTypeName: MoveScene, Assembly-CSharp
@@ -854,7 +858,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1645608816
 GameObject:

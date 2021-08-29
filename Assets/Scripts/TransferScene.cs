@@ -39,16 +39,16 @@ public class TransferScene : MonoBehaviour
                 thePlayer.beforeMapName = SceneManager.GetActiveScene().name;
                 thePlayer.currentMapName = transferMapName;
             }
-            if(transferMapName=="Quest1")
+            if(transferMapName=="Prov_Info")
             {
                 if (!LocalDBManager.Instance.isQuestCleared(1))
-                    thePlayer.questMode = true;
+                    playerScript.questMode = true;
                 else isNotPrimary = true;
             }
-            else if (transferMapName == "Quest2")
+            else if (transferMapName == "Prov_Info2")
             {
-                if (!LocalDBManager.Instance.isQuestCleared(2))
-                    thePlayer.questMode = true;
+                if (LocalDBManager.Instance.isQuestCleared(1)&& !LocalDBManager.Instance.isQuestCleared(2))
+                    playerScript.questMode = true;
                 else isNotPrimary = true;
             }
             if (!isNotPrimary)

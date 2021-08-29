@@ -22591,6 +22591,124 @@ IL2CPP_EXTERN_C  String_t* StyleTextShadow_ToString_mC67AE6434EA0C4C5FBA8E528DDA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.UIElements.StyleSheets.StyleValue UnityEngine.UIElements.StyleSheets.StyleValue::Create(UnityEngine.UIElements.StyleSheets.StylePropertyId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  StyleValue_Create_m858F005877A63C5B100171A63B70C01AF422CEBE (int32_t ___id0, const RuntimeMethod* method)
+{
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5 ));
+		int32_t L_0 = ___id0;
+		(&V_0)->set_id_0(L_0);
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_1 = V_0;
+		V_1 = L_1;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_2 = V_1;
+		return L_2;
+	}
+}
+// UnityEngine.UIElements.StyleSheets.StyleValue UnityEngine.UIElements.StyleSheets.StyleValue::Create(UnityEngine.UIElements.StyleSheets.StylePropertyId,UnityEngine.UIElements.StyleKeyword)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  StyleValue_Create_mE54DBC632FE0D61A3E1E78018C4C0C5EBACBF34B (int32_t ___id0, int32_t ___keyword1, const RuntimeMethod* method)
+{
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5 ));
+		int32_t L_0 = ___id0;
+		(&V_0)->set_id_0(L_0);
+		int32_t L_1 = ___keyword1;
+		(&V_0)->set_keyword_1(L_1);
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_2 = V_0;
+		V_1 = L_2;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_3 = V_1;
+		return L_3;
+	}
+}
+// UnityEngine.UIElements.StyleSheets.StyleValue UnityEngine.UIElements.StyleSheets.StyleValue::Create(UnityEngine.UIElements.StyleSheets.StylePropertyId,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  StyleValue_Create_mA14F9FC0902434EEC9E01E82A47BB257882D873F (int32_t ___id0, float ___number1, const RuntimeMethod* method)
+{
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5 ));
+		int32_t L_0 = ___id0;
+		(&V_0)->set_id_0(L_0);
+		float L_1 = ___number1;
+		(&V_0)->set_number_2(L_1);
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_2 = V_0;
+		V_1 = L_2;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_3 = V_1;
+		return L_3;
+	}
+}
+// UnityEngine.UIElements.StyleSheets.StyleValue UnityEngine.UIElements.StyleSheets.StyleValue::Create(UnityEngine.UIElements.StyleSheets.StylePropertyId,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  StyleValue_Create_mABCE314A6CFA9F91DC1DAC5AF038222FAC9E8E07 (int32_t ___id0, int32_t ___number1, const RuntimeMethod* method)
+{
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5 ));
+		int32_t L_0 = ___id0;
+		(&V_0)->set_id_0(L_0);
+		int32_t L_1 = ___number1;
+		(&V_0)->set_number_2(((float)((float)L_1)));
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_2 = V_0;
+		V_1 = L_2;
+		goto IL_001e;
+	}
+
+IL_001e:
+	{
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_3 = V_1;
+		return L_3;
+	}
+}
+// UnityEngine.UIElements.StyleSheets.StyleValue UnityEngine.UIElements.StyleSheets.StyleValue::Create(UnityEngine.UIElements.StyleSheets.StylePropertyId,UnityEngine.Color)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  StyleValue_Create_m6865DDB84313E47D25CD3BD61EDC5FC3FE73095A (int32_t ___id0, Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  ___color1, const RuntimeMethod* method)
+{
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5 ));
+		int32_t L_0 = ___id0;
+		(&V_0)->set_id_0(L_0);
+		Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  L_1 = ___color1;
+		(&V_0)->set_color_4(L_1);
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_2 = V_0;
+		V_1 = L_2;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		StyleValue_t761E8EE98A6473F2FB9DE803BD8F14F047430FF5  L_3 = V_1;
+		return L_3;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -110,7 +110,9 @@ extern void Error_NoElements_mB89E91246572F009281D79730950808F17C3F353 (void);
 // 0x0000005D T System.Collections.Generic.HashSet`1/Enumerator::get_Current()
 // 0x0000005E System.Object System.Collections.Generic.HashSet`1/Enumerator::System.Collections.IEnumerator.get_Current()
 // 0x0000005F System.Void System.Collections.Generic.HashSet`1/Enumerator::System.Collections.IEnumerator.Reset()
-static Il2CppMethodPointer s_methodPointers[95] = 
+// 0x00000060 System.Void System.Collections.Generic.ICollectionDebugView`1::.ctor(System.Collections.Generic.ICollection`1<T>)
+// 0x00000061 T[] System.Collections.Generic.ICollectionDebugView`1::get_Items()
+static Il2CppMethodPointer s_methodPointers[97] = 
 {
 	Error_ArgumentNull_m0EDA0D46D72CA692518E3E2EB75B48044D8FD41E,
 	Error_MoreThanOneMatch_m4C4756AF34A76EF12F3B2B6D8C78DE547F0FBCF8,
@@ -207,12 +209,16 @@ static Il2CppMethodPointer s_methodPointers[95] =
 	NULL,
 	NULL,
 	NULL,
+	NULL,
+	NULL,
 };
-static const int32_t s_InvokerIndices[95] = 
+static const int32_t s_InvokerIndices[97] = 
 {
-	2199,
-	2285,
-	2285,
+	2223,
+	2310,
+	2310,
+	-1,
+	-1,
 	-1,
 	-1,
 	-1,
@@ -306,7 +312,7 @@ static const int32_t s_InvokerIndices[95] =
 	-1,
 	-1,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[32] = 
+static const Il2CppTokenRangePair s_rgctxIndices[33] = 
 {
 	{ 0x02000004, { 54, 4 } },
 	{ 0x02000005, { 58, 9 } },
@@ -321,6 +327,7 @@ static const Il2CppTokenRangePair s_rgctxIndices[32] =
 	{ 0x0200000E, { 136, 4 } },
 	{ 0x0200000F, { 140, 21 } },
 	{ 0x02000011, { 161, 2 } },
+	{ 0x02000012, { 163, 2 } },
 	{ 0x06000004, { 0, 10 } },
 	{ 0x06000005, { 10, 10 } },
 	{ 0x06000006, { 20, 5 } },
@@ -504,7 +511,9 @@ extern const uint32_t g_rgctx_HashSet_1_IncreaseCapacity_mA3287035E39B231BF0B2B4
 extern const uint32_t g_rgctx_T_tFA70BB9403614A86785198F7670E8A79579D96AA;
 extern const uint32_t g_rgctx_Enumerator_get_Current_m5AF8DAD51CCB7D8472437E484EE9ECA33FACD0C8;
 extern const uint32_t g_rgctx_T_t915F5DD3D2E812A343EBC3FB68983028184D4B2A;
-static const Il2CppRGCTXDefinition s_rgctxValues[163] = 
+extern const uint32_t g_rgctx_ICollection_1_t57BB2F53D7B1293DA2748A70BD83E77C44C545C5;
+extern const uint32_t g_rgctx_TU5BU5D_t8AE52ADD1BD8F2D152136BB49C93ABFB5674E4F0;
+static const Il2CppRGCTXDefinition s_rgctxValues[165] = 
 {
 	{ (Il2CppRGCTXDataType)2, (const Il2CppRGCTXDefinitionData *)&g_rgctx_Iterator_1_t636279D5C9025C29159E9C0F450D35FFAC93279B },
 	{ (Il2CppRGCTXDataType)3, (const Il2CppRGCTXDefinitionData *)&g_rgctx_Iterator_1_Where_m0335429642E75AAECFBE3A2FFB3E69C0902CD0D0 },
@@ -669,22 +678,24 @@ static const Il2CppRGCTXDefinition s_rgctxValues[163] =
 	{ (Il2CppRGCTXDataType)2, (const Il2CppRGCTXDefinitionData *)&g_rgctx_T_tFA70BB9403614A86785198F7670E8A79579D96AA },
 	{ (Il2CppRGCTXDataType)3, (const Il2CppRGCTXDefinitionData *)&g_rgctx_Enumerator_get_Current_m5AF8DAD51CCB7D8472437E484EE9ECA33FACD0C8 },
 	{ (Il2CppRGCTXDataType)2, (const Il2CppRGCTXDefinitionData *)&g_rgctx_T_t915F5DD3D2E812A343EBC3FB68983028184D4B2A },
+	{ (Il2CppRGCTXDataType)2, (const Il2CppRGCTXDefinitionData *)&g_rgctx_ICollection_1_t57BB2F53D7B1293DA2748A70BD83E77C44C545C5 },
+	{ (Il2CppRGCTXDataType)2, (const Il2CppRGCTXDefinitionData *)&g_rgctx_TU5BU5D_t8AE52ADD1BD8F2D152136BB49C93ABFB5674E4F0 },
 };
 extern const CustomAttributesCacheGenerator g_System_Core_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_System_Core_CodeGenModule;
 const Il2CppCodeGenModule g_System_Core_CodeGenModule = 
 {
 	"System.Core.dll",
-	95,
+	97,
 	s_methodPointers,
 	0,
 	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
-	32,
+	33,
 	s_rgctxIndices,
-	163,
+	165,
 	s_rgctxValues,
 	NULL,
 	g_System_Core_AttributeGenerators,

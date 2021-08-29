@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+
 public class Quest_Main2 : MonoBehaviour
 {
     [SerializeField]
-    public Information_Control theInfo;
-    public SendMessage quest;
-    public ChoiceManager selection;
     public Choice[] choices;
     public int[] answers;
+    public string[] alerts;
+    public Information_Cont theInfo;
+    public ChoiceManager selection;
     private int count;
+    public bool isAble = false;
 
     private int correctState = 0;
     private bool done = false;
@@ -21,30 +24,40 @@ public class Quest_Main2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (LocalDBManager.Instance.isQuestCleared(1))
+        {
+            isAble = true;
+        }
+        else selection = null;
         thePlayer = FindObjectOfType<PlayerManager>();
+        thePlayer.questMode = true;
         count = 0;
-        theInfo.SetTitle("Before we start...");
-        theInfo.SetContent("You are here now because you contaminated the environment. To get out of here, you have to solve the given problems. All right, do your best!"); ;
-        theInfo.Appear();
-        selection.ShowChoice(choices[0]);
+        if (isAble)
+            selection.ShowChoice(choices[0]);
     }
 
+    public bool isOpenedDialog()
+    {
+        return theInfo.isOpenedDialog();
+    }
     void Trans()
     {
         thePlayer.questMode = false;
         thePlayer.currentMapName = "M-2";
         thePlayer.beforeMapName = "Q-4";
+        count = 0; correctState = 0;
+        theInfo.Disappear();
+        //Object.Destroy(quest.theInfo);
         SceneManager.LoadScene("M-2");
     }
 
     void Finish()
     {
-        
-        quest.SetMessage("Finn");
+        FadeObject obj = FindObjectOfType<FadeObject>();
         count++;
-        if (theInfo.isOpened == false && done == false)
+        if (theInfo.popup.GetBool("Appear") == false && done == false)
         {
-            if(correctState == choices.Length)
+            if (correctState == choices.Length)
             {
                 theInfo.SetTitle("Quest Cleared!");
                 theInfo.SetContent("You have cleared this stage. Now, find the exit point to end this game!");
@@ -53,15 +66,16 @@ public class Quest_Main2 : MonoBehaviour
             else
             {
                 theInfo.SetTitle("A little bit more...");
-                theInfo.SetTitle("You made some wrong answers.. you can retry this quest.");
+                theInfo.SetContent("You made some wrong answers.. you can retry this quest.");
+                theInfo.Appear();
             }
             done = true;
         }
         if (done == true && !theInfo.isOpened)
         {
-            if(correctState == choices.Length)
+            if (correctState == choices.Length)
                 LocalDBManager.Instance.QuestClear(2);
-            count = 0;
+            obj.FadeIn(obj.fadeTime);
             Trans();
         }
     }
@@ -69,20 +83,19 @@ public class Quest_Main2 : MonoBehaviour
     private void Correct(int round)
     {
         correctState++;
-        quest.SetMessage("Correct");
         theInfo.SetTitle("Correct!");
         switch (round)
         {
             case 0:
-                theInfo.SetContent("This is Content 1");
+                theInfo.SetContent(alerts[0]);
                 theInfo.Appear();
                 break;
             case 1:
-                theInfo.SetContent("This is Content 2");
+                theInfo.SetContent(alerts[1]);
                 theInfo.Appear();
                 break;
             case 2:
-                theInfo.SetContent("This is Content 3");
+                theInfo.SetContent(alerts[2]);
                 theInfo.Appear();
                 break;
             default:
@@ -93,20 +106,19 @@ public class Quest_Main2 : MonoBehaviour
 
     void Wrong(int round)
     {
-        quest.SetMessage("Wrong");
-        theInfo.SetTitle("Correct!");
+        theInfo.SetTitle("Wrong..");
         switch (round)
         {
             case 0:
-                theInfo.SetContent("This is Content 1");
+                theInfo.SetContent(alerts[0]);
                 theInfo.Appear();
                 break;
             case 1:
-                theInfo.SetContent("This is Content 2");
+                theInfo.SetContent(alerts[1]);
                 theInfo.Appear();
                 break;
             case 2:
-                theInfo.SetContent("This is Content 3");
+                theInfo.SetContent(alerts[2]);
                 theInfo.Appear();
                 break;
             default:
@@ -118,26 +130,27 @@ public class Quest_Main2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(theInfo.isOpened == false)
+        if (isAble)
         {
-            quest.Appear();
-        }
-        if (selection.isActive == false)
-        {
-            if(count < choices.Length-1)
+            if (selection.isActive == false)
             {
-                if (selection.GetResult() == answers[count])
+                if (count < choices.Length)
                 {
-                    Correct(count);
+                    if (selection.GetResult() == answers[count])
+                    {
+                        Correct(count);
+                    }
+                    else Wrong(count);
                 }
-                else Wrong(count);
+                if (count < choices.Length - 1)
+                {
+                    count++;
+                    selection.ShowChoice(choices[count]);
+                }
+                else Finish();
             }
-            if (count < choices.Length -1)
-            {
-                count++;
-                selection.ShowChoice(choices[count]);
-            }
-            else Finish();
         }
     }
 }
+
+

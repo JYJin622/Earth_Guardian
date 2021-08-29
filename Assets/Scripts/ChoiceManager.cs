@@ -49,6 +49,9 @@ public class ChoiceManager : MonoBehaviour
     GameObject player;
     PlayerManager playerScript;
 
+    Quest_Main1 qs1;
+    Quest_Main1 qs2;
+
 
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
 
@@ -108,7 +111,7 @@ public class ChoiceManager : MonoBehaviour
         anim.SetBool("Appear", false);
         answerList.Clear();
         isActive = false;
-        go.SetActive(false); //////////
+        //go.SetActive(false); //////////
     }
 
     IEnumerator ChoiceCoroutine()
@@ -169,7 +172,7 @@ public class ChoiceManager : MonoBehaviour
                     result = 0;
                 Selection();
             }
-            else if(playerScript.inputOK == true)
+            else if(playerScript.inputOK == true && (!qs1.isOpenedDialog() || !qs2.isOpenedDialog()))
             {
                 theAudio.Play(enterSound);
                 keyInput = false;

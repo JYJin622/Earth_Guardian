@@ -45,6 +45,8 @@ public class Info_main : MonoBehaviour
     public void Trans()
     {
         playerScript.inputOK = false;
+        Object.Destroy(theInfo);
+        Object.Destroy(quest);
         SceneManager.LoadScene("Quest1");
     }
     // Update is called once per frame

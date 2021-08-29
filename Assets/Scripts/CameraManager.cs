@@ -17,7 +17,7 @@ public class CameraManager : MonoBehaviour
     private float halfWidth;
     private float halfHeight;
 
-    private Camera theCamera;
+    public Camera theCamera;
 
     private void Awake()
     {
@@ -34,9 +34,10 @@ public class CameraManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        theCamera = GetComponent<Camera>();
-        minBound = bound.bounds.min;
-        maxBound = bound.bounds.max;
+        //theCamera = GetComponent<Camera>();
+        target = GameObject.FindWithTag("MainCharacter");
+        minBound = instance.bound.bounds.min;
+        maxBound = instance.bound.bounds.max;
         halfHeight = theCamera.orthographicSize;
         halfWidth = halfHeight * Screen.width / Screen.height;
     }

@@ -15,8 +15,9 @@ public class MoveScene : MonoBehaviour
         if (fadeTime != 0)
         {
             FadeObject obj = FindObjectOfType<FadeObject>();
-            obj.FadeIn(fadeTime);
-            Invoke("Load", fadeTime);
+            if(obj != null)
+                obj.FadeIn(fadeTime);
+            Invoke("Load", 2f);
         }
         else
             Invoke("Load", 0.5f);
@@ -25,7 +26,6 @@ public class MoveScene : MonoBehaviour
     public void Start()
     {
         LocalDBManager.Instance.LoadGameData();
-        LocalDBManager.Instance.SaveGameData();
         if(LocalDBManager.Instance.returnIsSaved() == true)
         {
             transferMapName = "M-1";

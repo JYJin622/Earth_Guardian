@@ -8,7 +8,6 @@ public class checkGameData : MonoBehaviour
     void Start()
     {
         LocalDBManager.Instance.LoadGameData();
-        LocalDBManager.Instance.SaveGameData();
     }
 
     // Update is called once per frame

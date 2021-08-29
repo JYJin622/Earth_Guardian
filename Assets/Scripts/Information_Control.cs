@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class Information_Control : MonoBehaviour
 {
+    //public static Information_Control instance;
     public Animator popup;
     public Text title;
     public Text content;
     public bool isOpened = false;
 
-    
     public void Load()
     {
         SetTitle("Before we start...");
@@ -30,6 +30,10 @@ public class Information_Control : MonoBehaviour
         popup.SetBool("Appear", false);
         isOpened = false;
     }
+    public bool isActive()
+    {
+        return popup.GetBool("Appear");
+    }
 
     public void SetTitle(string _title)
     {
@@ -41,6 +45,10 @@ public class Information_Control : MonoBehaviour
         content.text = _content;
     }
 
+    private void Start()
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
