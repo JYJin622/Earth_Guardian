@@ -384,12 +384,10 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_t8F9189BE6E467C98C99177038881F8982E
 IL2CPP_EXTERN_C RuntimeClass* WaitUntil_t2BCFEEF9372AFA754955A9733004060D1F609F21_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* menu_tE5FA1740AE0DD6F386AF3E646994D5116D686FBC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0512930604D33B370488224D1FBCE35536F39991;
-IL2CPP_EXTERN_C String_t* _stringLiteral09603FEAE4C18106666BCD582F57332074F291C7;
 IL2CPP_EXTERN_C String_t* _stringLiteral0C361DE20ADCD3EF53F7B80F6E3577D52B111560;
 IL2CPP_EXTERN_C String_t* _stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742;
 IL2CPP_EXTERN_C String_t* _stringLiteral0DB553D5FE794E8285D71E368990F43889917E6A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E367EA761CBED0F2F10E5A6D2A2628B2D155F78;
-IL2CPP_EXTERN_C String_t* _stringLiteral184CF0EFA19E116D28EB6370061BAABA75C0738B;
 IL2CPP_EXTERN_C String_t* _stringLiteral18A1F4A3B8324A37F0A24681AC93A9932F5430F7;
 IL2CPP_EXTERN_C String_t* _stringLiteral21F7AEEB84E3EF4DC4D495B2E36433B334266FD9;
 IL2CPP_EXTERN_C String_t* _stringLiteral27615B845F6E2B65B574ABF6B2D147F1CE7A1A53;
@@ -424,8 +422,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral98C15EBE0E943D6972F1F1142F7741828ADF7A5B
 IL2CPP_EXTERN_C String_t* _stringLiteral9A4D6D022C2660AACEDD40508FA69DB98C9A34A2;
 IL2CPP_EXTERN_C String_t* _stringLiteral9AB696A37604D665DC97134DBEE44CFE70451B1A;
 IL2CPP_EXTERN_C String_t* _stringLiteralA56779C0A85F3DC0A0744E2D106ECAE754EAFAB3;
+IL2CPP_EXTERN_C String_t* _stringLiteralA727FA387C46443D4F9A166ED795C3024E0DFD64;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3182538E4269DD4E1A008E2A7A6167AD084D829;
 IL2CPP_EXTERN_C String_t* _stringLiteralB598CF0802DB03FC469256176ABAFF79345D3832;
+IL2CPP_EXTERN_C String_t* _stringLiteralBE14B5CF98221AA69533306F461EEDFCFD3A9A28;
 IL2CPP_EXTERN_C String_t* _stringLiteralBE86F00232CDCD6B0AE55F07CC02A298271564FA;
 IL2CPP_EXTERN_C String_t* _stringLiteralC08F84DCBBB1A0C075EE22304088D62AB332B688;
 IL2CPP_EXTERN_C String_t* _stringLiteralC339F579E03205844E34CFB20EB7B4E96DCB1E85;
@@ -8099,6 +8099,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Info_main_NextWord_mBFE3257DF0FC6967AA01
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTypingAnswerU3Ed__8__ctor_m80025DD1251C6652822876F523C0975C3C4EFF85 (U3CTypingAnswerU3Ed__8_t2B305E661E0BE9EBB44F7663160D129F9E9F5DE6 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
 // System.Collections.IEnumerator Info_main::TypingAnswer(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Info_main_TypingAnswer_m3D1B0F9B7A27782211947564781173D05238353F (Info_main_t0D45FA589A4F21EDB46D5FCFE5D4F91592D23C79 * __this, int32_t ___p0, const RuntimeMethod* method);
+// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetActiveScene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE  SceneManager_GetActiveScene_mB9A5037FFB576B2432D0BFEF6A161B7C4C1921A4 (const RuntimeMethod* method);
+// System.String UnityEngine.SceneManagement.Scene::get_name()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m38F195D7CA6417FED310C23E4D8E86150C7835B8 (Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE * __this, const RuntimeMethod* method);
 // System.Void Information_Control::SetTitle(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Information_Control_SetTitle_m0841249569D8B7C399D0B013692EFE7A552287B4 (Information_Control_tEC7B4432592C11F7BB7B8353A5E8BACF04AE6F92 * __this, String_t* ____title0, const RuntimeMethod* method);
 // System.Void Information_Control::SetContent(System.String)
@@ -8284,10 +8288,6 @@ inline DialogueManager_t609C696D1E27CEA7A0895EDADECF76865D33931D * Object_FindOb
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DialogueManager_ShowDialogue_m568FF80E867E969AA8F35DB5CCCCF15E6F833AB7 (DialogueManager_t609C696D1E27CEA7A0895EDADECF76865D33931D * __this, Dialogue_tA1C94EA0CB09E76D320538CBB50740460F5D15F3 * ___dialogue0, const RuntimeMethod* method);
 // System.Boolean System.String::op_Inequality(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_mDDA2DDED3E7EF042987EB7180EE3E88105F0AAE2 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method);
-// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetActiveScene()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE  SceneManager_GetActiveScene_mB9A5037FFB576B2432D0BFEF6A161B7C4C1921A4 (const RuntimeMethod* method);
-// System.String UnityEngine.SceneManagement.Scene::get_name()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m38F195D7CA6417FED310C23E4D8E86150C7835B8 (Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Application::Quit()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m8D720E5092786C2EE32310D85FE61C253D3B1F2A (const RuntimeMethod* method);
 // System.Diagnostics.Process System.Diagnostics.Process::GetCurrentProcess()
@@ -11454,6 +11454,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Info_main_Trans_mFF3EE145DDDD86A6273FDF4
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0512930604D33B370488224D1FBCE35536F39991);
 		s_Il2CppMethodInitialized = true;
 	}
+	Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		// playerScript.inputOK = false;
 		PlayerManager_tA626E96D79E0168DAC909A130EC9A26A533AAD48 * L_0 = __this->get_playerScript_9();
@@ -11466,8 +11468,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Info_main_Trans_mFF3EE145DDDD86A6273FDF4
 		// Object.Destroy(quest);
 		SendMessage_tA5F8412F1143D2633C816362F7834E0097624F33 * L_2 = __this->get_quest_5();
 		Object_Destroy_m3EEDB6ECD49A541EC826EA8E1C8B599F7AF67D30(L_2, /*hidden argument*/NULL);
-		// SceneManager.LoadScene("Quest1");
+		// playerScript.beforeMapName = SceneManager.GetActiveScene().name;
+		PlayerManager_tA626E96D79E0168DAC909A130EC9A26A533AAD48 * L_3 = __this->get_playerScript_9();
 		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
+		Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE  L_4;
+		L_4 = SceneManager_GetActiveScene_mB9A5037FFB576B2432D0BFEF6A161B7C4C1921A4(/*hidden argument*/NULL);
+		V_0 = L_4;
+		String_t* L_5;
+		L_5 = Scene_get_name_m38F195D7CA6417FED310C23E4D8E86150C7835B8((Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE *)(&V_0), /*hidden argument*/NULL);
+		NullCheck(L_3);
+		L_3->set_beforeMapName_16(L_5);
+		// SceneManager.LoadScene("Quest1");
 		SceneManager_LoadScene_m7DAF30213E99396ECBDB1BD40CC34CCF36902092(_stringLiteral0512930604D33B370488224D1FBCE35536F39991, /*hidden argument*/NULL);
 		// }
 		return;
@@ -13939,10 +13950,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quest_Main1_Finish_mBD6ACFBD7383B67D6DA6
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindObjectOfType_TisFadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C_m3A27B80C7328FDBDA60372D8BC8EEA55376018AE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral184CF0EFA19E116D28EB6370061BAABA75C0738B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9196BB77C7B3FA7BEDDFFB599C06DD58BF278BB2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral93092DE877669CBF33892ABC6326CE3F49BEEDE2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9A4D6D022C2660AACEDD40508FA69DB98C9A34A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA727FA387C46443D4F9A166ED795C3024E0DFD64);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD635806FF60100143EC0E38F8B531E3A5546CA8C);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -13990,10 +14001,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quest_Main1_Finish_mBD6ACFBD7383B67D6DA6
 		Information_Cont_t419FF4FB2B00EBBC98AF06F344226F1582CCBF17 * L_8 = __this->get_theInfo_7();
 		NullCheck(L_8);
 		Information_Cont_SetTitle_m7EB08D77FFF53760ABC5FFCD2120F0A8C3DB2023(L_8, _stringLiteral93092DE877669CBF33892ABC6326CE3F49BEEDE2, /*hidden argument*/NULL);
-		// theInfo.SetContent("You have cleared this stage. Find the NPC2 and clear Quest 2. Good luck!");
+		// theInfo.SetContent("You have cleared this stage! Congratulations. If you didn't cleared other stage, you should clear it!");
 		Information_Cont_t419FF4FB2B00EBBC98AF06F344226F1582CCBF17 * L_9 = __this->get_theInfo_7();
 		NullCheck(L_9);
-		Information_Cont_SetContent_mA5622E0D15D643E397E14BBA4F6644DD1D8F3CE9(L_9, _stringLiteral184CF0EFA19E116D28EB6370061BAABA75C0738B, /*hidden argument*/NULL);
+		Information_Cont_SetContent_mA5622E0D15D643E397E14BBA4F6644DD1D8F3CE9(L_9, _stringLiteralA727FA387C46443D4F9A166ED795C3024E0DFD64, /*hidden argument*/NULL);
 		// theInfo.Appear();
 		Information_Cont_t419FF4FB2B00EBBC98AF06F344226F1582CCBF17 * L_10 = __this->get_theInfo_7();
 		NullCheck(L_10);
@@ -14389,13 +14400,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quest_Main2_Start_mB01DC7C3A22F99B8D22F3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (LocalDBManager.Instance.isQuestCleared(1))
+		// if (!LocalDBManager.Instance.isQuestCleared(2))
 		LocalDBManager_t48DFC55630CC3A640BE7B9D9DEDB505C065DBF2A * L_0;
 		L_0 = LocalDBManager_get_Instance_m74305C3FE82ACEF2D7EB5430A0B4790E800AE75A(/*hidden argument*/NULL);
 		NullCheck(L_0);
 		bool L_1;
-		L_1 = LocalDBManager_isQuestCleared_m7440F0B1D1EF460D6E7B17C841E78D81DE58E280(L_0, 1, /*hidden argument*/NULL);
-		if (!L_1)
+		L_1 = LocalDBManager_isQuestCleared_m7440F0B1D1EF460D6E7B17C841E78D81DE58E280(L_0, 2, /*hidden argument*/NULL);
+		if (L_1)
 		{
 			goto IL_0016;
 		}
@@ -14509,10 +14520,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quest_Main2_Finish_m79C76D1CFDFBA21D594A
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindObjectOfType_TisFadeObject_tABED9680BCE2B4DDC02CED14FABA42301473674C_m3A27B80C7328FDBDA60372D8BC8EEA55376018AE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral09603FEAE4C18106666BCD582F57332074F291C7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9196BB77C7B3FA7BEDDFFB599C06DD58BF278BB2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral93092DE877669CBF33892ABC6326CE3F49BEEDE2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9A4D6D022C2660AACEDD40508FA69DB98C9A34A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA727FA387C46443D4F9A166ED795C3024E0DFD64);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD635806FF60100143EC0E38F8B531E3A5546CA8C);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -14560,10 +14571,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quest_Main2_Finish_m79C76D1CFDFBA21D594A
 		Information_Cont_t419FF4FB2B00EBBC98AF06F344226F1582CCBF17 * L_8 = __this->get_theInfo_7();
 		NullCheck(L_8);
 		Information_Cont_SetTitle_m7EB08D77FFF53760ABC5FFCD2120F0A8C3DB2023(L_8, _stringLiteral93092DE877669CBF33892ABC6326CE3F49BEEDE2, /*hidden argument*/NULL);
-		// theInfo.SetContent("You have cleared this stage. Now, find the exit point to end this game!");
+		// theInfo.SetContent("You have cleared this stage! Congratulations. If you didn't cleared other stage, you should clear it!");
 		Information_Cont_t419FF4FB2B00EBBC98AF06F344226F1582CCBF17 * L_9 = __this->get_theInfo_7();
 		NullCheck(L_9);
-		Information_Cont_SetContent_mA5622E0D15D643E397E14BBA4F6644DD1D8F3CE9(L_9, _stringLiteral09603FEAE4C18106666BCD582F57332074F291C7, /*hidden argument*/NULL);
+		Information_Cont_SetContent_mA5622E0D15D643E397E14BBA4F6644DD1D8F3CE9(L_9, _stringLiteralA727FA387C46443D4F9A166ED795C3024E0DFD64, /*hidden argument*/NULL);
 		// theInfo.Appear();
 		Information_Cont_t419FF4FB2B00EBBC98AF06F344226F1582CCBF17 * L_10 = __this->get_theInfo_7();
 		NullCheck(L_10);
@@ -15608,6 +15619,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransferScene_OnTriggerEnter2D_m11D9E563
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral765EC736B7DF3074084DED8E3251969235884D7A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8E1EF80A7DA1A23CA1C3BDE2BA725FAD6460EF1D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral900D858FE9ABCD2ED2B25CD27110A78ADCC6EC6B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBE14B5CF98221AA69533306F461EEDFCFD3A9A28);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC339F579E03205844E34CFB20EB7B4E96DCB1E85);
 		s_Il2CppMethodInitialized = true;
 	}
 	Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE  V_0;
@@ -15625,7 +15638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransferScene_OnTriggerEnter2D_m11D9E563
 		L_3 = String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB(L_2, _stringLiteral765EC736B7DF3074084DED8E3251969235884D7A, /*hidden argument*/NULL);
 		if (!L_3)
 		{
-			goto IL_0114;
+			goto IL_0139;
 		}
 	}
 	{
@@ -15700,7 +15713,7 @@ IL_0085:
 		PlayerManager_tA626E96D79E0168DAC909A130EC9A26A533AAD48 * L_19 = __this->get_playerScript_6();
 		NullCheck(L_19);
 		L_19->set_questMode_17((bool)1);
-		goto IL_00fc;
+		goto IL_0121;
 	}
 
 IL_00b2:
@@ -15708,7 +15721,7 @@ IL_00b2:
 		// else isNotPrimary = true;
 		__this->set_isNotPrimary_7((bool)1);
 		// }
-		goto IL_00fc;
+		goto IL_0121;
 	}
 
 IL_00bb:
@@ -15719,53 +15732,73 @@ IL_00bb:
 		L_21 = String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB(L_20, _stringLiteral8E1EF80A7DA1A23CA1C3BDE2BA725FAD6460EF1D, /*hidden argument*/NULL);
 		if (!L_21)
 		{
-			goto IL_00fc;
+			goto IL_00f1;
 		}
 	}
 	{
-		// if (LocalDBManager.Instance.isQuestCleared(1)&& !LocalDBManager.Instance.isQuestCleared(2))
+		// if (!LocalDBManager.Instance.isQuestCleared(2))
 		LocalDBManager_t48DFC55630CC3A640BE7B9D9DEDB505C065DBF2A * L_22;
 		L_22 = LocalDBManager_get_Instance_m74305C3FE82ACEF2D7EB5430A0B4790E800AE75A(/*hidden argument*/NULL);
 		NullCheck(L_22);
 		bool L_23;
-		L_23 = LocalDBManager_isQuestCleared_m7440F0B1D1EF460D6E7B17C841E78D81DE58E280(L_22, 1, /*hidden argument*/NULL);
-		if (!L_23)
+		L_23 = LocalDBManager_isQuestCleared_m7440F0B1D1EF460D6E7B17C841E78D81DE58E280(L_22, 2, /*hidden argument*/NULL);
+		if (L_23)
 		{
-			goto IL_00f5;
-		}
-	}
-	{
-		LocalDBManager_t48DFC55630CC3A640BE7B9D9DEDB505C065DBF2A * L_24;
-		L_24 = LocalDBManager_get_Instance_m74305C3FE82ACEF2D7EB5430A0B4790E800AE75A(/*hidden argument*/NULL);
-		NullCheck(L_24);
-		bool L_25;
-		L_25 = LocalDBManager_isQuestCleared_m7440F0B1D1EF460D6E7B17C841E78D81DE58E280(L_24, 2, /*hidden argument*/NULL);
-		if (L_25)
-		{
-			goto IL_00f5;
+			goto IL_00e8;
 		}
 	}
 	{
 		// playerScript.questMode = true;
-		PlayerManager_tA626E96D79E0168DAC909A130EC9A26A533AAD48 * L_26 = __this->get_playerScript_6();
-		NullCheck(L_26);
-		L_26->set_questMode_17((bool)1);
-		goto IL_00fc;
+		PlayerManager_tA626E96D79E0168DAC909A130EC9A26A533AAD48 * L_24 = __this->get_playerScript_6();
+		NullCheck(L_24);
+		L_24->set_questMode_17((bool)1);
+		goto IL_0121;
 	}
 
-IL_00f5:
+IL_00e8:
 	{
 		// else isNotPrimary = true;
 		__this->set_isNotPrimary_7((bool)1);
+		// }
+		goto IL_0121;
 	}
 
-IL_00fc:
+IL_00f1:
+	{
+		// else if(transferMapName == "Ending" || transferMapName == "the_end")
+		String_t* L_25 = __this->get_transferMapName_4();
+		bool L_26;
+		L_26 = String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB(L_25, _stringLiteralBE14B5CF98221AA69533306F461EEDFCFD3A9A28, /*hidden argument*/NULL);
+		if (L_26)
+		{
+			goto IL_0115;
+		}
+	}
+	{
+		String_t* L_27 = __this->get_transferMapName_4();
+		bool L_28;
+		L_28 = String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB(L_27, _stringLiteralC339F579E03205844E34CFB20EB7B4E96DCB1E85, /*hidden argument*/NULL);
+		if (!L_28)
+		{
+			goto IL_0121;
+		}
+	}
+
+IL_0115:
+	{
+		// playerScript.questMode = true;
+		PlayerManager_tA626E96D79E0168DAC909A130EC9A26A533AAD48 * L_29 = __this->get_playerScript_6();
+		NullCheck(L_29);
+		L_29->set_questMode_17((bool)1);
+	}
+
+IL_0121:
 	{
 		// if (!isNotPrimary)
-		bool L_27 = __this->get_isNotPrimary_7();
-		if (L_27)
+		bool L_30 = __this->get_isNotPrimary_7();
+		if (L_30)
 		{
-			goto IL_0114;
+			goto IL_0139;
 		}
 	}
 	{
@@ -15773,7 +15806,7 @@ IL_00fc:
 		MonoBehaviour_Invoke_m4AAB759653B1C6FB0653527F4DDC72D1E9162CC4(__this, _stringLiteral6A719B16F03E18E6ED7CE19A6F58C0FEF4C3D978, (3.0f), /*hidden argument*/NULL);
 	}
 
-IL_0114:
+IL_0139:
 	{
 		// }
 		return;

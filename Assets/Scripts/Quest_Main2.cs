@@ -24,7 +24,7 @@ public class Quest_Main2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (LocalDBManager.Instance.isQuestCleared(1))
+        if (!LocalDBManager.Instance.isQuestCleared(2))
         {
             isAble = true;
         }
@@ -60,7 +60,7 @@ public class Quest_Main2 : MonoBehaviour
             if (correctState == choices.Length)
             {
                 theInfo.SetTitle("Quest Cleared!");
-                theInfo.SetContent("You have cleared this stage. Now, find the exit point to end this game!");
+                theInfo.SetContent("You have cleared this stage! Congratulations. If you didn't cleared other stage, you should clear it!");
                 theInfo.Appear();
             }
             else

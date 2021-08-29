@@ -47,9 +47,13 @@ public class TransferScene : MonoBehaviour
             }
             else if (transferMapName == "Prov_Info2")
             {
-                if (LocalDBManager.Instance.isQuestCleared(1)&& !LocalDBManager.Instance.isQuestCleared(2))
+                if (!LocalDBManager.Instance.isQuestCleared(2))
                     playerScript.questMode = true;
                 else isNotPrimary = true;
+            }
+            else if(transferMapName == "Ending" || transferMapName == "the_end")
+            {
+                playerScript.questMode = true;
             }
             if (!isNotPrimary)
                 Invoke("Load", 3);

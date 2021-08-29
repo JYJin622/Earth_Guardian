@@ -2240,7 +2240,7 @@ MonoBehaviour:
     - CO2
     - Oxygen
     - Greenhouse Gases
-  - question: 3. How much carbon dioxide does a tree reduce?
+  - question: 3. How much carbon dioxide does a tree reduce per year?
     answers:
     - 2kg
     - 3kg
@@ -2249,12 +2249,10 @@ MonoBehaviour:
   answers: 030000000200000003000000
   alerts:
   - We can reduce carbon emissions by riding bicycle instead of transportations,
-    and personal cars. Also, using transportations is better than using personal
-    cars.
-  - PET bottles, Cans, and glass bottles are very harmful for the environment. From
-    now on, why don't we use Personal tumbler instead? :0
-  - To recycle plastic bottles, you should rinse the bottle because sometimes the
-    remnants often contain suger. Also, make sure the bottle is unlabeled.
+    and personal cars. Also, using transpWe should save water, and electricity to
+    save the Earth!
+  - Carbon, CO2 and Greenhouse gases are CRITICAL to the environment!
+  - The answer is not 2kg, 3kg, 4kg. It's about 5kg per year!
   theInfo: {fileID: 114996570}
   selection: {fileID: 79884846}
   isAble: 0
@@ -2292,8 +2290,7 @@ MonoBehaviour:
     - By taxi
     - By bicycle
     - By personal car
-  - question: '2. What will you bring outside when you bring something to drink?mething
-      to '
+  - question: 2. What will you bring outside when you bring something to drink?
     answers:
     - 'A PET bottle '
     - Tumbler

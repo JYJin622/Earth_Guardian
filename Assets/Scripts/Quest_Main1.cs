@@ -60,7 +60,7 @@ public class Quest_Main1 : MonoBehaviour
             if (correctState == choices.Length)
             {
                 theInfo.SetTitle("Quest Cleared!");
-                theInfo.SetContent("You have cleared this stage. Find the NPC2 and clear Quest 2. Good luck!");
+                theInfo.SetContent("You have cleared this stage! Congratulations. If you didn't cleared other stage, you should clear it!");
                 theInfo.Appear();
             }
             else

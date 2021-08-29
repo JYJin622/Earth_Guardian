@@ -47,6 +47,7 @@ public class Info_main : MonoBehaviour
         playerScript.inputOK = false;
         Object.Destroy(theInfo);
         Object.Destroy(quest);
+        playerScript.beforeMapName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("Quest1");
     }
     // Update is called once per frame
