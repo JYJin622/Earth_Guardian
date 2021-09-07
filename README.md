@@ -1,6 +1,6 @@
 # Earth_Guardian
 e-icon Team DEV
 
-Unity 2021.1.18f1 using Android Build
+Unity 2021.1.19f1 using Android Build Setting
 
-Visual Studio 2022 preview c# Script
+Visual Studio 2022 preview C# Script
